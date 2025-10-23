@@ -1,39 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="Description" content="Manipulación del DOM y datos JSON" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample Page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="Description" content="Manipulación del DOM y datos JSON" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
     <!--EJERCICIO 1-->
     <h1 id="titulo1">EJERCICIO 1: Acceso al DOM</h1>
     <p>Este es el primer ejercicio de la práctica de Manipulación del DOM y datos JSON </p>
-    </header>
-    <main>  
+  </header>
+  <main>
     <!--EJERCICIO 2-->
     <section>
-    <p class="texto"> Este es el primer párrafo de la clase texto</p>
-    <p class="texto"> Este es el segundo párrafo de la clase texto</p>
-    <p class="texto"> Este es el tercer párrafo de la clase texto</p>
+      <p class="texto"> Este es el primer párrafo de la clase texto</p>
+      <p class="texto"> Este es el segundo párrafo de la clase texto</p>
+      <p class="texto"> Este es el tercer párrafo de la clase texto</p>
     </section>
 
     <!--EJERCICIO 3-->
     <div class="caja">
-        <p><strong> Primer div con clase caja </strong></p>
+      <p><strong> Primer div con clase caja </strong></p>
     </div>
 
     <!--EJERCICIO 4-->
     <section class="ejercicio-Botones">
-        <button class="btn-dom">Primer Botón</button>
-        <button class="btn-dom">Segundo Botón</button>
-        <button class="btn-dom">Tercer Botón</button>
+      <button class="btn-dom">Primer Botón</button>
+      <button class="btn-dom">Segundo Botón</button>
+      <button class="btn-dom">Tercer Botón</button>
     </section>
-    </main>
 
-    <script src="script.js?v=1.0"></script>
-  </body>
+    <!--EJERCICIO 5-->
+    <section class="Elementos-Lista">
+      <ul id="lista">
+        <li> Elemento 1 de la lista</li>
+        <li> Elemento 2 de la lista</li>
+      </ul>
+    </section>
+
+    <!--EJERCICIO 6-->
+    <section class="ejercicio6">
+
+    </section>
+
+    <!--EJERCICIO 7-->
+    <section class="ejercicio7">
+      <div id="contenedor"></div>
+    </section>
+
+    <!--EJERCICIO 8-->
+    <section class="ejercicio8">
+      <div id="contenedorImagen"></div>
+    </section>
+
+    <!--EJERCICIO 9: Creo estructura completa desde JS-->
+    <section class="ejercicio9">
+
+    </section>
+
+    <!--EJERCICIO 10-->
+    <section class="ejercicio10">
+
+    </section>
+
+    <!--EJERCICIO 11 SIN HACER-->
+    <section class="ejercicio11">
+      <p id="parrafoAEliminar"> PARRAFO PARA ELIMINAR</p>
+      <button class="btn-eliminar" onclick="eliminarParrafo()"> Eliminar</button>
+      <button class="btn-reemplazar" onclick="reemplazarParrafo()">Reemplazar</button>
+
+    </section>
+
+    <!--EJERCICIO 12-->
+    <section class="ejercicio12">
+   <div class="col">
+    <div class="card-img">
+      <img src="https://i.pinimg.com/736x/80/80/7f/80807ffcec9fb6d69597f876ca55087d.jpg" class="card-img-top" alt="Felicidades">
+      <div class="card-body">
+        <h5 class="card-title">FELICITACIÓN</h5>
+        <p class="card-text1">Feliz Cumpleaños</p>
+      </div>
+    </div>
+  </div>
+  <button class="boton-clonar" onclick="clonarTarjeta()">Clonar Tarjeta</button>
+    
+</section>
+
+    <!--EJERCICIO 13-->
+    <!--EJERCICIO 14-->
+    <!--EJERCICIO 15-->
+    <!--EJERCICIO 16-->
+    <!--EJERCICIO 17-->
+    <!--EJERCICIO 18-->
+    <!--EJERCICIO 19-->
+    <!--EJERCICIO 20-->
+
+
+
+  </main>
+
+  <script src="script.js?v=1.0.2"></script>
+</body>
+
 </html>
