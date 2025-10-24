@@ -229,10 +229,27 @@ function clonarTarjeta() {
 
 //EJERCICIO 13: CREAR LISTA DINÁMICA CON BOTÓN
 
+//Creo la función de agregar elemento a la que se le llama al clicar en el botón
+function agregarElemento(){
+    const listaElementos= document.getElementById("listaElementos"); 
+    const liNuevo= document.createElement('li');
+    liNuevo.textContent="Elemento nuevo creado";
 
+    //añado el elemento a la lista
+    listaElementos.appendChild(liNuevo);
+}
 
 //EJERCICIO 14: ELIMINAR ÚLTIMO ELEMENTO
 
+//Creo la función de agregar elemento a la que se le llama al clicar en el botón
+function eliminarUltimoElemento(){
+    const listaElementos= document.getElementById("listaElementos"); 
+    if (listaElementos){
+        listaElementos.lastElementChild.remove();
+    }
+    //añado el elemento a la lista
+    listaElementos.appendChild(liNuevo);
+}
 
 
 //EJERCICIO 15: RECORRER COLECCIÓN Y MODIFICAR
