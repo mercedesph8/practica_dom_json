@@ -48,7 +48,7 @@ console.log("listaColeccionViva.length");
 
 //Colección estática 
 const listaColeccionEstatica = document.querySelectorAll("li");
-console.log("listaColeccionEstatica.length");
+console.log(listaColeccionEstatica.length);
 
 //Agrego elemento
 const nuevoLi = document.createElement('li');
@@ -232,7 +232,7 @@ function clonarTarjeta() {
 
 //Creo la función de agregar elemento a la que se le llama al clicar en el botón
 function agregarElemento(){
-    const listaElementos= document.getElementById("listaElementos"); 
+    const listaElementos= document.getElementById("listaDinamica"); 
     const liNuevo= document.createElement('li');
     liNuevo.textContent="Elemento nuevo creado"; 
 
@@ -243,14 +243,12 @@ function agregarElemento(){
 //EJERCICIO 14: ELIMINAR ÚLTIMO ELEMENTO
 
 
-//Creo la función de agregar elemento a la que se le llama al clicar en el botón
-function eliminarUltimoElemento(){
-    const listaElementos= document.getElementById("listaElementos"); 
-    if (listaElementos){
-        listaElementos.lastElementChild.remove();
+//Creo la función de eliminar elemento a la que se le llama al clicar en el botón
+function eliminarUltimo(){
+    const lista= document.getElementById("listaDinamica"); 
+    if (lista){
+        lista.lastElementChild.remove();
     }
-    //añado el elemento a la lista
-    listaElementos.appendChild(liNuevo);
 }
 
 
@@ -380,7 +378,7 @@ function cargarTablaUsuarios() {
             `;
 
             //creamos el body de la tabla
-            const bodyTabla = document.createElement('bodyTabla');
+            const bodyTabla = document.createElement('tbody');
             usuarios.forEach(usuario => {
                 // Para CADA usuario, creamos una fila <tr>
                 const tr = document.createElement('tr');
